@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7); /* Dark to light gradient for a professional look */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    background: #34495e; /* Dark background for content container */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    padding: 20px;
+    color: #fff;
+}
+
+/* Question Styling */
+.ques {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Input Styling */
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.input:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Submit Button Styling */
+.submit-answer {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.submit-answer:hover {
+    background: #16a085;
+    transform: translateY(-2px);
+}
+
+/* Result Section Styling */
+.result-container {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1abc9c;
+}
+
+.result-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.result-container strong {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+/* Start Again Button Styling */
+.result-container .start-again {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #3498db; /* Blue color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.result-container .start-again:hover {
+    background: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.result-container .start-again:active {
+    background: #1f618d; /* Even darker blue when clicked */
+    transform: translateY(0);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .ques {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .submit-answer {
+        font-size: 1rem;
+    }
+
+    .result-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .result-container p {
+        font-size: 1rem;
+    }
+
+    .result-container .start-again {
+        font-size: 0.9rem;
+    }
+}
