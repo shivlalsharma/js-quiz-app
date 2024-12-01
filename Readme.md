@@ -50,7 +50,7 @@ To run the Quiz Web Application locally, follow these steps:
 
 2. **Open the `index.html` file in your browser**.
 
-   Alternatively, you can set up a local server (e.g., using **VS Code Live Server**) to view the game in your browser.
+   Alternatively, you can set up a local server (e.g., using **VS Code Live Server**) to view the project in your browser.
 
 ---
 
